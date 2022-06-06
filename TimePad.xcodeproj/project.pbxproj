@@ -1,0 +1,893 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40EE10E4FC83F6300C0E8570 /* Pods_TimePad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8828045AC666DC585993184 /* Pods_TimePad.framework */; };
+		73F390D97AFA16BCEC70D12F /* Pods_TimePadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5660055B587355F8B50B6D49 /* Pods_TimePadTests.framework */; };
+		9BC10CDEAC7D48842BA036AC /* Pods_TimePad_TimePadUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C3881B88CE2FA11A42A5C08 /* Pods_TimePad_TimePadUITests.framework */; };
+		E11659EC28444CCE001BF836 /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11659EB28444CCE001BF836 /* TimeIntervalExtension.swift */; };
+		E11659EE2844534E001BF836 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11659ED2844534E001BF836 /* TaskViewController.swift */; };
+		E19266D9284211E1006462A6 /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19266D8284211E1006462A6 /* TabBarButton.swift */; };
+		E19266DB28421475006462A6 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19266DA28421475006462A6 /* TabBarView.swift */; };
+		E19266DD28423119006462A6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19266DC28423119006462A6 /* BaseViewController.swift */; };
+		E19266DF28425D78006462A6 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19266DE28425D78006462A6 /* TaskTableViewCell.swift */; };
+		E19266E1284275EF006462A6 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19266E0284275EF006462A6 /* HistoryTableViewCell.swift */; };
+		E1A854612840F01F00E9FE27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A854602840F01F00E9FE27 /* AppDelegate.swift */; };
+		E1A854632840F01F00E9FE27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A854622840F01F00E9FE27 /* SceneDelegate.swift */; };
+		E1A8546A2840F02300E9FE27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A854692840F02300E9FE27 /* Assets.xcassets */; };
+		E1A8546D2840F02400E9FE27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A8546B2840F02400E9FE27 /* LaunchScreen.storyboard */; };
+		E1A854782840F02400E9FE27 /* TimePadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A854772840F02400E9FE27 /* TimePadTests.swift */; };
+		E1A854822840F02400E9FE27 /* TimePadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A854812840F02400E9FE27 /* TimePadUITests.swift */; };
+		E1A854842840F02400E9FE27 /* TimePadUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A854832840F02400E9FE27 /* TimePadUITestsLaunchTests.swift */; };
+		E1A854932840F8B000E9FE27 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A854922840F8B000E9FE27 /* MainViewController.swift */; };
+		E1A8549928410E5000E9FE27 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A8549828410E5000E9FE27 /* HomeViewController.swift */; };
+		E1A8549B28410E5600E9FE27 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A8549A28410E5600E9FE27 /* ChartViewController.swift */; };
+		E1A8549E28411AEF00E9FE27 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A8549D28411AEF00E9FE27 /* UIColorExtension.swift */; };
+		E1A854A12841227400E9FE27 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A854A02841227400E9FE27 /* UIViewControllerExtension.swift */; };
+		E1B1368628490E2A006D8713 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1368528490E2A006D8713 /* DateExtension.swift */; };
+		E1F9B496284380A000047D96 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F9B495284380A000047D96 /* Category.swift */; };
+		E1F9B4982843822500047D96 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F9B4972843822500047D96 /* Tag.swift */; };
+		E1F9B49B28438DCD00047D96 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F9B49A28438DCD00047D96 /* AddTaskViewController.swift */; };
+		E1F9B49D2843ABAA00047D96 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F9B49C2843ABAA00047D96 /* Task.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1A854742840F02400E9FE27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1A854552840F01F00E9FE27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1A8545C2840F01F00E9FE27;
+			remoteInfo = TimePad;
+		};
+		E1A8547E2840F02400E9FE27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1A854552840F01F00E9FE27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1A8545C2840F01F00E9FE27;
+			remoteInfo = TimePad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C3881B88CE2FA11A42A5C08 /* Pods_TimePad_TimePadUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimePad_TimePadUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F8475A0EE849C72C061D99A /* Pods-TimePadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimePadTests.debug.xcconfig"; path = "Target Support Files/Pods-TimePadTests/Pods-TimePadTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5660055B587355F8B50B6D49 /* Pods_TimePadTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimePadTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C9D938FCFE2D2A69160D799 /* Pods-TimePad-TimePadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimePad-TimePadUITests.debug.xcconfig"; path = "Target Support Files/Pods-TimePad-TimePadUITests/Pods-TimePad-TimePadUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6216026EA679C44DFA1FCA73 /* Pods-TimePadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimePadTests.release.xcconfig"; path = "Target Support Files/Pods-TimePadTests/Pods-TimePadTests.release.xcconfig"; sourceTree = "<group>"; };
+		AA7C237CD0F602A18CEE549C /* Pods-TimePad-TimePadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimePad-TimePadUITests.release.xcconfig"; path = "Target Support Files/Pods-TimePad-TimePadUITests/Pods-TimePad-TimePadUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AD80A849F6E6236FA179566E /* Pods-TimePad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimePad.release.xcconfig"; path = "Target Support Files/Pods-TimePad/Pods-TimePad.release.xcconfig"; sourceTree = "<group>"; };
+		B8828045AC666DC585993184 /* Pods_TimePad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimePad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D843522D78A0ABDE3B9A2B79 /* Pods-TimePad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimePad.debug.xcconfig"; path = "Target Support Files/Pods-TimePad/Pods-TimePad.debug.xcconfig"; sourceTree = "<group>"; };
+		E11659EB28444CCE001BF836 /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtension.swift; sourceTree = "<group>"; };
+		E11659ED2844534E001BF836 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		E19266D8284211E1006462A6 /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
+		E19266DA28421475006462A6 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		E19266DC28423119006462A6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E19266DE28425D78006462A6 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		E19266E0284275EF006462A6 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		E1A8545D2840F01F00E9FE27 /* TimePad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimePad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1A854602840F01F00E9FE27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E1A854622840F01F00E9FE27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E1A854692840F02300E9FE27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1A8546C2840F02400E9FE27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E1A8546E2840F02400E9FE27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1A854732840F02400E9FE27 /* TimePadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimePadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1A854772840F02400E9FE27 /* TimePadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePadTests.swift; sourceTree = "<group>"; };
+		E1A8547D2840F02400E9FE27 /* TimePadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimePadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1A854812840F02400E9FE27 /* TimePadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePadUITests.swift; sourceTree = "<group>"; };
+		E1A854832840F02400E9FE27 /* TimePadUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePadUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E1A854922840F8B000E9FE27 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E1A8549828410E5000E9FE27 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E1A8549A28410E5600E9FE27 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		E1A8549D28411AEF00E9FE27 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		E1A854A02841227400E9FE27 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		E1B1368528490E2A006D8713 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		E1F9B495284380A000047D96 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		E1F9B4972843822500047D96 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		E1F9B49A28438DCD00047D96 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		E1F9B49C2843ABAA00047D96 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1A8545A2840F01F00E9FE27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40EE10E4FC83F6300C0E8570 /* Pods_TimePad.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A854702840F02400E9FE27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73F390D97AFA16BCEC70D12F /* Pods_TimePadTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A8547A2840F02400E9FE27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BC10CDEAC7D48842BA036AC /* Pods_TimePad_TimePadUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3433623406C43AFC0ACBE8F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D843522D78A0ABDE3B9A2B79 /* Pods-TimePad.debug.xcconfig */,
+				AD80A849F6E6236FA179566E /* Pods-TimePad.release.xcconfig */,
+				5C9D938FCFE2D2A69160D799 /* Pods-TimePad-TimePadUITests.debug.xcconfig */,
+				AA7C237CD0F602A18CEE549C /* Pods-TimePad-TimePadUITests.release.xcconfig */,
+				2F8475A0EE849C72C061D99A /* Pods-TimePadTests.debug.xcconfig */,
+				6216026EA679C44DFA1FCA73 /* Pods-TimePadTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5A9FFFCB1371415AAB90B03D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8828045AC666DC585993184 /* Pods_TimePad.framework */,
+				1C3881B88CE2FA11A42A5C08 /* Pods_TimePad_TimePadUITests.framework */,
+				5660055B587355F8B50B6D49 /* Pods_TimePadTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E19266D7284211B7006462A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E19266D8284211E1006462A6 /* TabBarButton.swift */,
+				E19266DA28421475006462A6 /* TabBarView.swift */,
+				E19266DC28423119006462A6 /* BaseViewController.swift */,
+				E19266DE28425D78006462A6 /* TaskTableViewCell.swift */,
+				E19266E0284275EF006462A6 /* HistoryTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E1A854542840F01F00E9FE27 = {
+			isa = PBXGroup;
+			children = (
+				E1A8545F2840F01F00E9FE27 /* TimePad */,
+				E1A854762840F02400E9FE27 /* TimePadTests */,
+				E1A854802840F02400E9FE27 /* TimePadUITests */,
+				E1A8545E2840F01F00E9FE27 /* Products */,
+				3433623406C43AFC0ACBE8F1 /* Pods */,
+				5A9FFFCB1371415AAB90B03D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E1A8545E2840F01F00E9FE27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1A8545D2840F01F00E9FE27 /* TimePad.app */,
+				E1A854732840F02400E9FE27 /* TimePadTests.xctest */,
+				E1A8547D2840F02400E9FE27 /* TimePadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1A8545F2840F01F00E9FE27 /* TimePad */ = {
+			isa = PBXGroup;
+			children = (
+				E1F9B4942843809500047D96 /* Model */,
+				E19266D7284211B7006462A6 /* View */,
+				E1A8549428410DD800E9FE27 /* App */,
+				E1A8549C28411ADC00E9FE27 /* Extension */,
+				E1A854902840F89600E9FE27 /* Module */,
+				E1A8549528410E0F00E9FE27 /* Supporting Files */,
+				E1A8546E2840F02400E9FE27 /* Info.plist */,
+			);
+			path = TimePad;
+			sourceTree = "<group>";
+		};
+		E1A854762840F02400E9FE27 /* TimePadTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1A854772840F02400E9FE27 /* TimePadTests.swift */,
+			);
+			path = TimePadTests;
+			sourceTree = "<group>";
+		};
+		E1A854802840F02400E9FE27 /* TimePadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E1A854812840F02400E9FE27 /* TimePadUITests.swift */,
+				E1A854832840F02400E9FE27 /* TimePadUITestsLaunchTests.swift */,
+			);
+			path = TimePadUITests;
+			sourceTree = "<group>";
+		};
+		E1A854902840F89600E9FE27 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				E1F9B49928438DC200047D96 /* Task */,
+				E1A854912840F8A300E9FE27 /* Main */,
+				E1A8549628410E1E00E9FE27 /* Home */,
+				E1A8549728410E2200E9FE27 /* Chart */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		E1A854912840F8A300E9FE27 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E1A854922840F8B000E9FE27 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E1A8549428410DD800E9FE27 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E1A854602840F01F00E9FE27 /* AppDelegate.swift */,
+				E1A854622840F01F00E9FE27 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E1A8549528410E0F00E9FE27 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1A854692840F02300E9FE27 /* Assets.xcassets */,
+				E1A8546B2840F02400E9FE27 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1A8549628410E1E00E9FE27 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E1A8549828410E5000E9FE27 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E1A8549728410E2200E9FE27 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				E1A8549A28410E5600E9FE27 /* ChartViewController.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		E1A8549C28411ADC00E9FE27 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E1A8549D28411AEF00E9FE27 /* UIColorExtension.swift */,
+				E1A854A02841227400E9FE27 /* UIViewControllerExtension.swift */,
+				E11659EB28444CCE001BF836 /* TimeIntervalExtension.swift */,
+				E1B1368528490E2A006D8713 /* DateExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E1F9B4942843809500047D96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1F9B495284380A000047D96 /* Category.swift */,
+				E1F9B4972843822500047D96 /* Tag.swift */,
+				E1F9B49C2843ABAA00047D96 /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E1F9B49928438DC200047D96 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				E1F9B49A28438DCD00047D96 /* AddTaskViewController.swift */,
+				E11659ED2844534E001BF836 /* TaskViewController.swift */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1A8545C2840F01F00E9FE27 /* TimePad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1A854872840F02400E9FE27 /* Build configuration list for PBXNativeTarget "TimePad" */;
+			buildPhases = (
+				173FC72F86E5958D75776928 /* [CP] Check Pods Manifest.lock */,
+				E1A854592840F01F00E9FE27 /* Sources */,
+				E1A8545A2840F01F00E9FE27 /* Frameworks */,
+				E1A8545B2840F01F00E9FE27 /* Resources */,
+				F612A43016C96B594B2354F4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimePad;
+			productName = TimePad;
+			productReference = E1A8545D2840F01F00E9FE27 /* TimePad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1A854722840F02400E9FE27 /* TimePadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1A8548A2840F02400E9FE27 /* Build configuration list for PBXNativeTarget "TimePadTests" */;
+			buildPhases = (
+				2ACE4F4D856F2DA5F3876905 /* [CP] Check Pods Manifest.lock */,
+				E1A8546F2840F02400E9FE27 /* Sources */,
+				E1A854702840F02400E9FE27 /* Frameworks */,
+				E1A854712840F02400E9FE27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1A854752840F02400E9FE27 /* PBXTargetDependency */,
+			);
+			name = TimePadTests;
+			productName = TimePadTests;
+			productReference = E1A854732840F02400E9FE27 /* TimePadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E1A8547C2840F02400E9FE27 /* TimePadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1A8548D2840F02400E9FE27 /* Build configuration list for PBXNativeTarget "TimePadUITests" */;
+			buildPhases = (
+				E07656CE12C705BA4A23CFF5 /* [CP] Check Pods Manifest.lock */,
+				E1A854792840F02400E9FE27 /* Sources */,
+				E1A8547A2840F02400E9FE27 /* Frameworks */,
+				E1A8547B2840F02400E9FE27 /* Resources */,
+				92617526983758302B0E7D7A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1A8547F2840F02400E9FE27 /* PBXTargetDependency */,
+			);
+			name = TimePadUITests;
+			productName = TimePadUITests;
+			productReference = E1A8547D2840F02400E9FE27 /* TimePadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1A854552840F01F00E9FE27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					E1A8545C2840F01F00E9FE27 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					E1A854722840F02400E9FE27 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = E1A8545C2840F01F00E9FE27;
+					};
+					E1A8547C2840F02400E9FE27 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = E1A8545C2840F01F00E9FE27;
+					};
+				};
+			};
+			buildConfigurationList = E1A854582840F01F00E9FE27 /* Build configuration list for PBXProject "TimePad" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1A854542840F01F00E9FE27;
+			productRefGroup = E1A8545E2840F01F00E9FE27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1A8545C2840F01F00E9FE27 /* TimePad */,
+				E1A854722840F02400E9FE27 /* TimePadTests */,
+				E1A8547C2840F02400E9FE27 /* TimePadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1A8545B2840F01F00E9FE27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1A8546D2840F02400E9FE27 /* LaunchScreen.storyboard in Resources */,
+				E1A8546A2840F02300E9FE27 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A854712840F02400E9FE27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A8547B2840F02400E9FE27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		173FC72F86E5958D75776928 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimePad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2ACE4F4D856F2DA5F3876905 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimePadTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92617526983758302B0E7D7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimePad-TimePadUITests/Pods-TimePad-TimePadUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimePad-TimePadUITests/Pods-TimePad-TimePadUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimePad-TimePadUITests/Pods-TimePad-TimePadUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E07656CE12C705BA4A23CFF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimePad-TimePadUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F612A43016C96B594B2354F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimePad/Pods-TimePad-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimePad/Pods-TimePad-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimePad/Pods-TimePad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1A854592840F01F00E9FE27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1A854612840F01F00E9FE27 /* AppDelegate.swift in Sources */,
+				E19266DB28421475006462A6 /* TabBarView.swift in Sources */,
+				E19266DF28425D78006462A6 /* TaskTableViewCell.swift in Sources */,
+				E1A854632840F01F00E9FE27 /* SceneDelegate.swift in Sources */,
+				E1F9B49B28438DCD00047D96 /* AddTaskViewController.swift in Sources */,
+				E1B1368628490E2A006D8713 /* DateExtension.swift in Sources */,
+				E1A854932840F8B000E9FE27 /* MainViewController.swift in Sources */,
+				E1A8549928410E5000E9FE27 /* HomeViewController.swift in Sources */,
+				E19266E1284275EF006462A6 /* HistoryTableViewCell.swift in Sources */,
+				E1F9B49D2843ABAA00047D96 /* Task.swift in Sources */,
+				E19266DD28423119006462A6 /* BaseViewController.swift in Sources */,
+				E1A8549B28410E5600E9FE27 /* ChartViewController.swift in Sources */,
+				E1F9B496284380A000047D96 /* Category.swift in Sources */,
+				E1F9B4982843822500047D96 /* Tag.swift in Sources */,
+				E19266D9284211E1006462A6 /* TabBarButton.swift in Sources */,
+				E1A854A12841227400E9FE27 /* UIViewControllerExtension.swift in Sources */,
+				E1A8549E28411AEF00E9FE27 /* UIColorExtension.swift in Sources */,
+				E11659EC28444CCE001BF836 /* TimeIntervalExtension.swift in Sources */,
+				E11659EE2844534E001BF836 /* TaskViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A8546F2840F02400E9FE27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1A854782840F02400E9FE27 /* TimePadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A854792840F02400E9FE27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1A854822840F02400E9FE27 /* TimePadUITests.swift in Sources */,
+				E1A854842840F02400E9FE27 /* TimePadUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1A854752840F02400E9FE27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1A8545C2840F01F00E9FE27 /* TimePad */;
+			targetProxy = E1A854742840F02400E9FE27 /* PBXContainerItemProxy */;
+		};
+		E1A8547F2840F02400E9FE27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1A8545C2840F01F00E9FE27 /* TimePad */;
+			targetProxy = E1A8547E2840F02400E9FE27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1A8546B2840F02400E9FE27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1A8546C2840F02400E9FE27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1A854852840F02400E9FE27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E1A854862840F02400E9FE27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1A854882840F02400E9FE27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D843522D78A0ABDE3B9A2B79 /* Pods-TimePad.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q3UF58D23J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimePad/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yxgg.TimePad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1A854892840F02400E9FE27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD80A849F6E6236FA179566E /* Pods-TimePad.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q3UF58D23J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimePad/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yxgg.TimePad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E1A8548B2840F02400E9FE27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F8475A0EE849C72C061D99A /* Pods-TimePadTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q3UF58D23J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yxgg.TimePadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimePad.app/TimePad";
+			};
+			name = Debug;
+		};
+		E1A8548C2840F02400E9FE27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6216026EA679C44DFA1FCA73 /* Pods-TimePadTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q3UF58D23J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yxgg.TimePadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimePad.app/TimePad";
+			};
+			name = Release;
+		};
+		E1A8548E2840F02400E9FE27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C9D938FCFE2D2A69160D799 /* Pods-TimePad-TimePadUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q3UF58D23J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yxgg.TimePadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TimePad;
+			};
+			name = Debug;
+		};
+		E1A8548F2840F02400E9FE27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA7C237CD0F602A18CEE549C /* Pods-TimePad-TimePadUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q3UF58D23J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yxgg.TimePadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TimePad;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1A854582840F01F00E9FE27 /* Build configuration list for PBXProject "TimePad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1A854852840F02400E9FE27 /* Debug */,
+				E1A854862840F02400E9FE27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1A854872840F02400E9FE27 /* Build configuration list for PBXNativeTarget "TimePad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1A854882840F02400E9FE27 /* Debug */,
+				E1A854892840F02400E9FE27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1A8548A2840F02400E9FE27 /* Build configuration list for PBXNativeTarget "TimePadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1A8548B2840F02400E9FE27 /* Debug */,
+				E1A8548C2840F02400E9FE27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1A8548D2840F02400E9FE27 /* Build configuration list for PBXNativeTarget "TimePadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1A8548E2840F02400E9FE27 /* Debug */,
+				E1A8548F2840F02400E9FE27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1A854552840F01F00E9FE27 /* Project object */;
+}
